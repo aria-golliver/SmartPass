@@ -38,19 +38,21 @@ public final class R {
         public static final int ic_launcher=0x7f020005;
         public static final int ic_launcher1=0x7f020006;
         public static final int outlinerect=0x7f020007;
-        public static final int solidrect=0x7f020008;
-        public static final int x_icon2=0x7f020009;
+        public static final int removeaccount_icon=0x7f020008;
+        public static final int solidrect=0x7f020009;
+        public static final int x_icon2=0x7f02000a;
     }
     public static final class id {
         public static final int ExpList=0x7f0a0019;
         public static final int ExpListDelete=0x7f0a0000;
-        public static final int action_settings=0x7f0a001f;
+        public static final int action_settings=0x7f0a0020;
         public static final int createNewLoginButton=0x7f0a0015;
         public static final int deletePasswordCancel=0x7f0a0001;
         public static final int deletePasswordListButton=0x7f0a001a;
         public static final int folderSpinner=0x7f0a0008;
         public static final int imageView1=0x7f0a0002;
         public static final int imageView2=0x7f0a0012;
+        public static final int imageView3=0x7f0a001d;
         public static final int loginButton=0x7f0a0005;
         public static final int lowerCheckBox=0x7f0a000c;
         public static final int newAccountButton=0x7f0a001c;
@@ -69,8 +71,8 @@ public final class R {
         public static final int passwordEditText=0x7f0a0006;
         public static final int specialCheckBox=0x7f0a000f;
         public static final int textView1=0x7f0a0003;
-        public static final int tvChild=0x7f0a001d;
-        public static final int tvGroup=0x7f0a001e;
+        public static final int tvChild=0x7f0a001e;
+        public static final int tvGroup=0x7f0a001f;
         public static final int upperCheckBox=0x7f0a000d;
         public static final int usernameEditText=0x7f0a0007;
         public static final int websiteNameEditText=0x7f0a000a;
