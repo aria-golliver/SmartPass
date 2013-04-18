@@ -45,7 +45,6 @@ public final class R {
         public static final int ExpList=0x7f0a0019;
         public static final int ExpListDelete=0x7f0a0000;
         public static final int action_settings=0x7f0a001f;
-        public static final int button1=0x7f0a0016;
         public static final int createNewLoginButton=0x7f0a0015;
         public static final int deletePasswordCancel=0x7f0a0001;
         public static final int deletePasswordListButton=0x7f0a001a;
@@ -63,8 +62,9 @@ public final class R {
         public static final int newFolderCancelButton=0x7f0a0013;
         public static final int newFolderCreateButton=0x7f0a0014;
         public static final int newLoginButton=0x7f0a0004;
-        public static final int newLoginPasswordEditText=0x7f0a0017;
-        public static final int newLoginUsernameEditText=0x7f0a0018;
+        public static final int newLoginCancelButton=0x7f0a0016;
+        public static final int newLoginPasswordEditText=0x7f0a0018;
+        public static final int newLoginUsernameEditText=0x7f0a0017;
         public static final int numberCheckBox=0x7f0a000e;
         public static final int passwordEditText=0x7f0a0006;
         public static final int specialCheckBox=0x7f0a000f;
@@ -106,6 +106,7 @@ public final class R {
         public static final int cancel=0x7f050018;
         public static final int create=0x7f050017;
         public static final int deleteText=0x7f05001e;
+        public static final int enterFTPinformation=0x7f050025;
         public static final int folderName=0x7f050019;
         public static final int folder_prompt=0x7f050015;
         public static final int generate=0x7f050014;

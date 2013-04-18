@@ -5,6 +5,7 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -23,6 +24,9 @@ public class NewLogin extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
+		Typeface sintRegFont = Typeface.createFromAsset(getAssets(),
+	            "fonts/SintonyRegular.ttf");
+		
 		ActionBar bar = getActionBar();
 		bar.setTitle("Create a New Account");
 		bar.setBackgroundDrawable(new ColorDrawable(Color.rgb(90, 100, 102)));
@@ -34,11 +38,17 @@ public class NewLogin extends Activity {
 		setupActionBar();
 
 		final Button createNewLoginButton = (Button) findViewById(R.id.createNewLoginButton);
+		final Button cancelNewLoginButton = (Button) findViewById(R.id.newLoginCancelButton);
 		final EditText usernameEditText = (EditText) findViewById(R.id.newLoginUsernameEditText);
 		final EditText passwordEditText = (EditText) findViewById(R.id.newLoginPasswordEditText);
 
 		final Context context = this;
 
+		createNewLoginButton.setTypeface(sintRegFont);
+		cancelNewLoginButton.setTypeface(sintRegFont);
+		usernameEditText.setTypeface(sintRegFont);
+		passwordEditText.setTypeface(sintRegFont);
+		
 		createNewLoginButton.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -56,6 +66,14 @@ public class NewLogin extends Activity {
 
 				PasswordFile.saveFile();
 				new SendPasswordTask().execute(args);
+				((Activity) context).finish();
+			}
+		});
+		
+		cancelNewLoginButton.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
 				((Activity) context).finish();
 			}
 		});

@@ -14,7 +14,7 @@
         android:minWidth="159dip" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/newLoginCancelButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/createNewLoginButton"
@@ -22,22 +22,6 @@
         android:layout_alignParentRight="true"
         android:background="@drawable/solidrect"
         android:minWidth="159dip" />
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/newLoginPasswordEditText"
-        android:layout_alignParentBottom="true"
-        android:src="@drawable/check_icon2" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/newLoginPasswordEditText"
-        android:layout_alignTop="@+id/imageView1"
-        android:src="@drawable/x_icon2" />
 
     <EditText
         android:id="@+id/newLoginUsernameEditText"
@@ -69,5 +53,32 @@
         android:maxWidth="200dp"
         android:text="@string/password"
         android:width="200dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="43dp"
+        android:src="@drawable/x_icon2" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="41dp"
+        android:src="@drawable/check_icon2" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/newLoginUsernameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="@string/enterFTPinformation" />
 
 </RelativeLayout>

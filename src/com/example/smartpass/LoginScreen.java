@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
@@ -22,6 +23,9 @@ public class LoginScreen extends Activity {
 		ActionBar bar = getActionBar();
 		bar.setBackgroundDrawable(new ColorDrawable(0xFFFF0000));
 		
+		Typeface sintRegFont = Typeface.createFromAsset(getAssets(),
+				"fonts/SintonyRegular.ttf");
+		
 	//	Drawable d = getResources().getDrawable(R.drawable.d);
 		bar.hide();
 		
@@ -34,6 +38,11 @@ public class LoginScreen extends Activity {
 		final EditText usernameEditText = (EditText) findViewById(R.id.usernameEditText);
 		final EditText passwordEditText = (EditText) findViewById(R.id.passwordEditText);
 
+		loginButton.setTypeface(sintRegFont);
+		newLoginButton.setTypeface(sintRegFont);
+		usernameEditText.setTypeface(sintRegFont);
+		passwordEditText.setTypeface(sintRegFont);
+		
 		final Context context = this;
 
 		loginButton.setOnClickListener(new View.OnClickListener() {

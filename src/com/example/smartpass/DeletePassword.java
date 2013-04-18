@@ -14,6 +14,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.Menu;
@@ -30,6 +31,9 @@ public class DeletePassword extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		Typeface sintRegFont = Typeface.createFromAsset(getAssets(),
+				"fonts/SintonyRegular.ttf");
+
 		ActionBar bar = getActionBar();
 		bar.setTitle("Delete a Password");
 		bar.setBackgroundDrawable(new ColorDrawable(Color.rgb(90, 100, 102)));
@@ -42,7 +46,7 @@ public class DeletePassword extends Activity {
 		ExpListItems = SetStandardGroups();
 		ExpAdapter = new PasswordListAdapter(DeletePassword.this, ExpListItems);
 		ExpandList.setAdapter(ExpAdapter);
-
+		
 		final UserAccount[][] childList = new UserAccount[PasswordFile
 				.getFolders().size()][];
 
@@ -106,6 +110,7 @@ public class DeletePassword extends Activity {
 				((Activity) context).finish();
 			}
 		});
+		cancelButton.setTypeface(sintRegFont);
 	}
 
 	@Override

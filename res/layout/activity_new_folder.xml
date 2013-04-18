@@ -38,19 +38,21 @@
     </EditText>
 
     <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="36dp"
+        android:src="@drawable/check_icon2" />
+
+    <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/websiteNameEditText"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="39dp"
         android:src="@drawable/x_icon2" />
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/websiteNameEditText"
-        android:layout_alignParentBottom="true"
-        android:src="@drawable/check_icon2" />
 
 </RelativeLayout>

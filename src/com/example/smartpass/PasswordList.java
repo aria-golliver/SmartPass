@@ -10,6 +10,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
@@ -88,6 +89,13 @@ public class PasswordList extends Activity {
 		final Button newFolderButton = (Button) findViewById(R.id.newFolderButton);
 		final Button deletePasswordListButton = (Button) findViewById(R.id.deletePasswordListButton);
 
+		Typeface sintRegFont = Typeface.createFromAsset(getAssets(),
+				"fonts/SintonyRegular.ttf");
+
+		newAccountButton.setTypeface(sintRegFont);
+		newFolderButton.setTypeface(sintRegFont);
+		deletePasswordListButton.setTypeface(sintRegFont);
+		
 		final Context context = this;
 
 		newAccountButton.setOnClickListener(new View.OnClickListener() {

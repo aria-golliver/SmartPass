@@ -51,5 +51,6 @@
     <string name="signup">Sign Up</string>
     <string name="noaccountyet">No account yet?</string>
     <string name="title_activity_clear_clipboard">ClearClipboard</string>
+    <string name="enterFTPinformation">Enter SmartPass ftp username and password</string>
 
 </resources>

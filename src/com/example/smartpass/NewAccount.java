@@ -14,6 +14,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -37,7 +38,9 @@ public class NewAccount extends Activity {
 		ActionBar bar = getActionBar();
 		bar.setTitle("Add Account");
 		bar.setBackgroundDrawable(new ColorDrawable(Color.rgb(90, 100, 102)));
-		
+
+		Typeface sintRegFont = Typeface.createFromAsset(getAssets(),
+				"fonts/SintonyRegular.ttf");
 		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_new_account);
@@ -52,6 +55,12 @@ public class NewAccount extends Activity {
 
 		final EditText newAccountLengthEditText = (EditText) findViewById(R.id.newAccountLengthEditText);
 
+		newAccountCancelButton.setTypeface(sintRegFont);
+		newAccountCreateButton.setTypeface(sintRegFont);
+		websiteNameEditText.setTypeface(sintRegFont);
+		usernameEditText.setTypeface(sintRegFont);
+		newAccountLengthEditText.setTypeface(sintRegFont);
+		
 		final Context context = this;
 
 		final CheckBox lower = ((CheckBox) findViewById(R.id.lowerCheckBox));
@@ -60,7 +69,7 @@ public class NewAccount extends Activity {
 		final CheckBox special = ((CheckBox) findViewById(R.id.specialCheckBox));
 
 		final Spinner folderSpinner = (Spinner) findViewById(R.id.folderSpinner);
-
+		
 		Set<String> folderSet = PasswordFile.getFolders();
 		String[] folders = new String[folderSet.size()];
 		int i = 0;

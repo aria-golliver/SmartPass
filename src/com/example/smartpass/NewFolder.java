@@ -15,6 +15,7 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 
@@ -26,6 +27,9 @@ public class NewFolder extends Activity {
 		bar.setTitle("Add Folder");
 		bar.setBackgroundDrawable(new ColorDrawable(Color.rgb(90, 100, 102)));
 
+		Typeface sintRegFont = Typeface.createFromAsset(getAssets(),
+				"fonts/SintonyRegular.ttf");
+		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_new_folder);
 		// Show the Up button in the action bar.
@@ -33,7 +37,8 @@ public class NewFolder extends Activity {
 
 		final Button newFolderCancelButton = (Button) findViewById(R.id.newFolderCancelButton);
 		final Button newFolderCreateButton = (Button) findViewById(R.id.newFolderCreateButton);
-
+		newFolderCancelButton.setTypeface(sintRegFont);
+		newFolderCreateButton.setTypeface(sintRegFont);
 		final Context context = this;
 
 		newFolderCancelButton.setOnClickListener(new View.OnClickListener() {

@@ -123,19 +123,21 @@
         android:width="159dp" />
 
     <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/numberCheckBox"
-        android:src="@drawable/check_icon2" />
-
-    <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/websiteNameEditText"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
         android:src="@drawable/x_icon2" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numberCheckBox"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="28dp"
+        android:src="@drawable/check_icon2" />
 
 </RelativeLayout>
