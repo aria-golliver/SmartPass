@@ -75,11 +75,17 @@ public final class PasswordFile {
 				String folderName = folder.split(":")[0];
 				PasswordFile.folderList.add(folderName);
 			}
+			if (PasswordFile.folderList.size() == 0) {
+				PasswordFile.folderList.add("default");
+			}
 
 		} catch (FileNotFoundException e) {
 			encryptedPasswordFile = new HashMap<String, UserAccount>();
+			PasswordFile.folderList.add("default");
+
 		} catch (IOException e) {
 			encryptedPasswordFile = new HashMap<String, UserAccount>();
+			PasswordFile.folderList.add("default");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} finally {
@@ -123,7 +129,6 @@ public final class PasswordFile {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 
 		UserAccount ua = new UserAccount(newUsername, encryptedPassword,
 				folder, passwordName);
