@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewLogin" >
+
+    <Button
+        android:id="@+id/createNewLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/solidrect"
+        android:minWidth="159dip" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/createNewLoginButton"
+        android:layout_alignBottom="@+id/createNewLoginButton"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/solidrect"
+        android:minWidth="159dip" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newLoginPasswordEditText"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/check_icon2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/newLoginPasswordEditText"
+        android:layout_alignTop="@+id/imageView1"
+        android:src="@drawable/x_icon2" />
+
+    <EditText
+        android:id="@+id/newLoginUsernameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/outlinerect"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:maxWidth="200dp"
+        android:text="@string/username"
+        android:width="200dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/newLoginPasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newLoginUsernameEditText"
+        android:layout_below="@+id/newLoginUsernameEditText"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/outlinerect"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:maxWidth="200dp"
+        android:text="@string/password"
+        android:width="200dp" />
+
+</RelativeLayout>
