@@ -102,6 +102,8 @@ public class PasswordListAdapter extends BaseExpandableListAdapter {
 		TextView tv = (TextView) view.findViewById(R.id.tvGroup);
 		tv.setTypeface(sintRegFont);
 		tv.setText(group.getName());
+		tv.setPadding(0, 10, 0, 10);
+		
 		// TODO Auto-generated method stub
 		return view;
 	}
