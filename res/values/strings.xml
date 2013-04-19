@@ -13,7 +13,7 @@
 
     <color name="Black">#000000</color>
     <color name="ExpandChildBackground">#FFFFFFFF</color>
-    <color name="ExpandGroupBackground">#FF137D99</color>
+    <color name="ExpandGroupBackground">#FF1091bf</color>
 
     <string name="new_folder">New Folder</string>
     <string name="new_account">New Account</string>
