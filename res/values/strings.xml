@@ -11,6 +11,7 @@
     <string name="remember_me">remember me</string>
     <string name="title_activity_password_list">PasswordList</string>
 
+    <color name="OffBlack">#2D3233</color>
     <color name="Black">#000000</color>
     <color name="ExpandChildBackground">#FFFFFFFF</color>
     <color name="ExpandGroupBackground">#FF1091bf</color>

@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/folder_prompt"
         android:entries="@array/folder_array"
+        android:textColor="@color/OffBlack"
         android:prompt="@string/folder_prompt">
 		</Spinner>
 		
@@ -27,6 +28,7 @@
         android:inputType="text"
         android:selectAllOnFocus="true"
         android:text="@string/username"
+        android:textColor="@color/OffBlack"
          />
 
     <EditText
@@ -39,6 +41,7 @@
         android:inputType="number"
         android:selectAllOnFocus="true"
         android:text="@string/twentyfour"
+        android:textColor="@color/OffBlack"
         android:width="45dp"
          >
     </EditText>
@@ -51,6 +54,7 @@
         android:layout_alignBottom="@+id/newAccountLengthEditText"
         android:layout_toRightOf="@+id/newAccountLengthEditText"
         android:text="@string/passwordlength"
+        android:textColor="@color/OffBlack"
          />
 
     <CheckBox
@@ -60,6 +64,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/newAccountLengthEditText"
         android:checked="true"
+        android:textColor="@color/OffBlack"
         android:text="@string/lowercase" />
 
     <CheckBox
@@ -70,6 +75,7 @@
         android:layout_alignBottom="@+id/lowerCheckBox"
         android:layout_toRightOf="@+id/lowerCheckBox"
         android:checked="true"
+        android:textColor="@color/OffBlack"
         android:text="@string/numbers" />
 
     <CheckBox
@@ -79,6 +85,7 @@
         android:layout_alignRight="@+id/lowerCheckBox"
         android:layout_below="@+id/lowerCheckBox"
         android:checked="true"
+        android:textColor="@color/OffBlack"
         android:text="@string/uppercase">
         </CheckBox>
     
@@ -90,6 +97,7 @@
         android:layout_alignLeft="@+id/upperCheckBox"
         android:layout_below="@+id/upperCheckBox"
         android:checked="true"
+        android:textColor="@color/OffBlack"
         android:text="@string/special" />
     
     <EditText
@@ -101,6 +109,7 @@
         android:ems="10"
         android:inputType="text"
         android:selectAllOnFocus="true"
+        android:textColor="@color/OffBlack"
         android:text="@string/website" />
 
     <Button
@@ -110,6 +119,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:background="@drawable/solidrect"
+        android:textColor="@color/OffBlack"
         android:width="159dp" />
 
     <Button
@@ -120,6 +130,7 @@
         android:layout_alignParentRight="true"
         android:background="@drawable/solidrect"
         android:minWidth="0dip"
+        android:textColor="@color/OffBlack"
         android:width="159dp" />
 
     <ImageView

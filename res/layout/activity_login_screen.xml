@@ -16,6 +16,7 @@
         android:layout_alignBottom="@+id/newLoginButton"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
+        android:textColor="@color/OffBlack"
         android:text="@string/noaccountyet" />
 
     <Button
@@ -59,8 +60,8 @@
         android:ems="10"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
-        android:text="@string/password"
-        android:textColor="@android:color/black"
+        android:text="@string/password" 
+        android:textColor="@color/OffBlack"
         android:width="200dp" >
     </EditText>
 
@@ -77,7 +78,7 @@
         android:inputType="textNoSuggestions"
         android:selectAllOnFocus="true"
         android:text="@string/username"
-        android:textColor="@android:color/black"
+        android:textColor="@color/OffBlack"
         android:width="200dp" >
 
         <requestFocus />

@@ -14,9 +14,10 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int Black=0x7f060000;
-        public static final int ExpandChildBackground=0x7f060001;
-        public static final int ExpandGroupBackground=0x7f060002;
+        public static final int Black=0x7f060001;
+        public static final int ExpandChildBackground=0x7f060002;
+        public static final int ExpandGroupBackground=0x7f060003;
+        public static final int OffBlack=0x7f060000;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -89,6 +90,7 @@ public final class R {
         public static final int activity_password_list=0x7f030008;
         public static final int expandlist_child_item=0x7f030009;
         public static final int expandlist_group_item=0x7f03000a;
+        public static final int offblack_spinner=0x7f03000b;
     }
     public static final class menu {
         public static final int clear_clipboard=0x7f090000;
