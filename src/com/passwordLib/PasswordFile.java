@@ -52,6 +52,7 @@ public final class PasswordFile {
 
 		/* read from disk */
 		FileInputStream f_in;
+		PasswordFile.folderList = new TreeSet<String>();
 		ObjectInputStream obj_in;
 		try {
 			f_in = new FileInputStream(context.getFilesDir() + "/" + fileName);
@@ -70,7 +71,6 @@ public final class PasswordFile {
 			f_in.close();
 			obj_in.close();
 
-			PasswordFile.folderList = new TreeSet<String>();
 			for (String folder : encryptedPasswordFile.keySet()) {
 				String folderName = folder.split(":")[0];
 				PasswordFile.folderList.add(folderName);
@@ -80,7 +80,7 @@ public final class PasswordFile {
 			}
 
 		} catch (FileNotFoundException e) {
-			encryptedPasswordFile = new HashMap<String, UserAccount>();
+			encryptedPasswordFile = new HashMap<String, UserAccount>();			
 			PasswordFile.folderList.add("default");
 
 		} catch (IOException e) {
