@@ -99,6 +99,7 @@ public class PasswordList extends Activity {
 		final Context context = this;
 
 		newAccountButton.setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(context, NewAccount.class);
 				startActivity(intent);
@@ -107,6 +108,7 @@ public class PasswordList extends Activity {
 		});
 
 		deletePasswordListButton.setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(context, DeletePassword.class);
 				startActivity(intent);
@@ -115,6 +117,7 @@ public class PasswordList extends Activity {
 		});
 
 		newFolderButton.setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(context, NewFolder.class);
 				startActivity(intent);

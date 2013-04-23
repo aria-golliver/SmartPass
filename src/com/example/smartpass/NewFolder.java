@@ -42,6 +42,7 @@ public class NewFolder extends Activity {
 		final Context context = this;
 
 		newFolderCancelButton.setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(context, PasswordList.class);
 				context.startActivity(intent);
@@ -50,6 +51,7 @@ public class NewFolder extends Activity {
 		});
 
 		newFolderCreateButton.setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				final String folderName = ((EditText) findViewById(R.id.websiteNameEditText))
 						.getText().toString();

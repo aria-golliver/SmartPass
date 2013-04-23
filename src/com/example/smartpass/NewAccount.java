@@ -83,6 +83,7 @@ public class NewAccount extends Activity {
 		folderSpinner.setAdapter(adapter);
 
 		newAccountCancelButton.setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(context, PasswordList.class);
 				context.startActivity(intent);
@@ -92,6 +93,7 @@ public class NewAccount extends Activity {
 		});
 
 		newAccountCreateButton.setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				int len = 24;
 				try {

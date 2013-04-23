@@ -1,12 +1,6 @@
 package com.passwordLib;
 
 import android.annotation.SuppressLint;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-
-import javax.crypto.BadPaddingException;
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.NoSuchPaddingException;
 
 @SuppressLint("DefaultLocale")
 public class PasswordLib {
@@ -66,7 +60,7 @@ public class PasswordLib {
 
 	public static String decode(String encryptedString, String masterPassword) {
 		try {
-			return (String) SimpleCrypto.decrypt(encryptedString,
+			return SimpleCrypto.decrypt(encryptedString,
 					masterPassword);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

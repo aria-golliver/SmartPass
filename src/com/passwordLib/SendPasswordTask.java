@@ -64,6 +64,7 @@ public class SendPasswordTask extends AsyncTask<Object, Void, Boolean> {
 		return true;
 	}
 
+	@Override
 	protected void onPostExecute(Boolean result) {
 		// do nothing
 	}

@@ -21,6 +21,7 @@ public class UserAccount implements Serializable {
 	public final String encryptedPassword;
 	public final String folder;
 
+	@Override
 	public String toString() {
 		return "username: " + username;
 	}

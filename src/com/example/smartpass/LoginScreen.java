@@ -3,7 +3,6 @@ package com.example.smartpass;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -43,6 +42,7 @@ public class LoginScreen extends Activity {
 		final Context context = this;
 
 		loginButton.setOnClickListener(new View.OnClickListener() {
+			@Override
 			public void onClick(View v) {
 				CharSequence toastMessage = "Connecting to SmartFile";
 				int duration = Toast.LENGTH_SHORT;

@@ -3,9 +3,6 @@ package com.passwordLib;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -100,6 +97,7 @@ public class RetrivePasswordTask extends AsyncTask<Object, Void, Boolean> {
 		return true;
 	}
 
+	@Override
 	protected void onPostExecute(Boolean result) {
 		if (result) {
 

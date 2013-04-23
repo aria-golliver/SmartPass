@@ -34,18 +34,19 @@ public class PasswordListAdapter extends BaseExpandableListAdapter {
 		groups.get(index).setItems(ch);
 	}
 
+	@Override
 	public Object getChild(int groupPosition, int childPosition) {
-		// TODO Auto-generated method stub
 		ArrayList<ExpandListChild> chList = groups.get(groupPosition)
 				.getItems();
 		return chList.get(childPosition);
 	}
 
+	@Override
 	public long getChildId(int groupPosition, int childPosition) {
-		// TODO Auto-generated method stub
 		return childPosition;
 	}
 
+	@Override
 	public View getChildView(int groupPosition, int childPosition,
 			boolean isLastChild, View view, ViewGroup parent) {
 		Typeface sintRegFont = Typeface.createFromAsset(context.getAssets(),
@@ -54,19 +55,19 @@ public class PasswordListAdapter extends BaseExpandableListAdapter {
 				childPosition);
 		if (view == null) {
 			LayoutInflater infalInflater = (LayoutInflater) context
-					.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			view = infalInflater.inflate(R.layout.expandlist_child_item, null);
 		}
 		TextView tv = (TextView) view.findViewById(R.id.tvChild);
 		tv.setTypeface(sintRegFont);
 		tv.setText(child.getName().toString());
 		tv.setTag(child.getTag());
-		// TODO Auto-generated method stub
+		tv.setPadding(0, 5, 0, 5);
 		return view;
 	}
 
+	@Override
 	public int getChildrenCount(int groupPosition) {
-		// TODO Auto-generated method stub
 		ArrayList<ExpandListChild> chList = groups.get(groupPosition)
 				.getItems();
 
@@ -74,21 +75,22 @@ public class PasswordListAdapter extends BaseExpandableListAdapter {
 
 	}
 
+	@Override
 	public Object getGroup(int groupPosition) {
-		// TODO Auto-generated method stub
 		return groups.get(groupPosition);
 	}
 
+	@Override
 	public int getGroupCount() {
-		// TODO Auto-generated method stub
 		return groups.size();
 	}
 
+	@Override
 	public long getGroupId(int groupPosition) {
-		// TODO Auto-generated method stub
 		return groupPosition;
 	}
 
+	@Override
 	public View getGroupView(int groupPosition, boolean isLastChild, View view,
 			ViewGroup parent) {
 		ExpandListGroup group = (ExpandListGroup) getGroup(groupPosition);
@@ -96,25 +98,23 @@ public class PasswordListAdapter extends BaseExpandableListAdapter {
 				"fonts/SintonyRegular.ttf");
 		if (view == null) {
 			LayoutInflater inf = (LayoutInflater) context
-					.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			view = inf.inflate(R.layout.expandlist_group_item, null);
 		}
 		TextView tv = (TextView) view.findViewById(R.id.tvGroup);
 		tv.setTypeface(sintRegFont);
 		tv.setText(group.getName());
 		tv.setPadding(0, 10, 0, 10);
-		
-		// TODO Auto-generated method stub
 		return view;
 	}
 
+	@Override
 	public boolean hasStableIds() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
+	@Override
 	public boolean isChildSelectable(int arg0, int arg1) {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
