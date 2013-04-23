@@ -26,7 +26,6 @@ public class LoginScreen extends Activity {
 		Typeface sintRegFont = Typeface.createFromAsset(getAssets(),
 				"fonts/SintonyRegular.ttf");
 		
-	//	Drawable d = getResources().getDrawable(R.drawable.d);
 		bar.hide();
 		
 		
