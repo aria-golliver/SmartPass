@@ -44,39 +44,40 @@ public final class R {
         public static final int x_icon2=0x7f02000a;
     }
     public static final class id {
-        public static final int ExpList=0x7f0a0019;
+        public static final int ExpList=0x7f0a001a;
         public static final int ExpListDelete=0x7f0a0000;
-        public static final int action_settings=0x7f0a0020;
-        public static final int createNewLoginButton=0x7f0a0015;
+        public static final int action_settings=0x7f0a0021;
+        public static final int createNewLoginButton=0x7f0a0014;
         public static final int deletePasswordCancel=0x7f0a0001;
-        public static final int deletePasswordListButton=0x7f0a001a;
-        public static final int folderSpinner=0x7f0a0008;
+        public static final int deletePasswordListButton=0x7f0a001b;
+        public static final int folderSpinner=0x7f0a0007;
         public static final int imageView1=0x7f0a0002;
-        public static final int imageView2=0x7f0a0012;
-        public static final int imageView3=0x7f0a001d;
-        public static final int loginButton=0x7f0a0005;
-        public static final int lowerCheckBox=0x7f0a000c;
-        public static final int newAccountButton=0x7f0a001c;
-        public static final int newAccountCancelButton=0x7f0a0011;
-        public static final int newAccountCreateButton=0x7f0a0010;
-        public static final int newAccountLengthEditText=0x7f0a000b;
-        public static final int newAcctUsernameEditText=0x7f0a0009;
-        public static final int newFolderButton=0x7f0a001b;
-        public static final int newFolderCancelButton=0x7f0a0013;
-        public static final int newFolderCreateButton=0x7f0a0014;
-        public static final int newLoginButton=0x7f0a0004;
-        public static final int newLoginCancelButton=0x7f0a0016;
-        public static final int newLoginPasswordEditText=0x7f0a0018;
+        public static final int imageView2=0x7f0a0011;
+        public static final int imageView3=0x7f0a001e;
+        public static final int loginButton=0x7f0a0003;
+        public static final int lowerCheckBox=0x7f0a000b;
+        public static final int newAccountButton=0x7f0a001d;
+        public static final int newAccountCancelButton=0x7f0a0010;
+        public static final int newAccountCreateButton=0x7f0a000f;
+        public static final int newAccountLengthEditText=0x7f0a000a;
+        public static final int newAcctUsernameEditText=0x7f0a0008;
+        public static final int newFolderButton=0x7f0a001c;
+        public static final int newFolderCancelButton=0x7f0a0012;
+        public static final int newFolderCreateButton=0x7f0a0013;
+        public static final int newLoginCancelButton=0x7f0a0015;
+        public static final int newLoginEmailEditText=0x7f0a0018;
+        public static final int newLoginFullNameEditText=0x7f0a0016;
+        public static final int newLoginPasswordEditText=0x7f0a0019;
         public static final int newLoginUsernameEditText=0x7f0a0017;
-        public static final int numberCheckBox=0x7f0a000e;
-        public static final int passwordEditText=0x7f0a0006;
-        public static final int specialCheckBox=0x7f0a000f;
-        public static final int textView1=0x7f0a0003;
-        public static final int tvChild=0x7f0a001e;
-        public static final int tvGroup=0x7f0a001f;
-        public static final int upperCheckBox=0x7f0a000d;
-        public static final int usernameEditText=0x7f0a0007;
-        public static final int websiteNameEditText=0x7f0a000a;
+        public static final int numberCheckBox=0x7f0a000d;
+        public static final int passwordEditText=0x7f0a0004;
+        public static final int specialCheckBox=0x7f0a000e;
+        public static final int textView1=0x7f0a0006;
+        public static final int tvChild=0x7f0a001f;
+        public static final int tvGroup=0x7f0a0020;
+        public static final int upperCheckBox=0x7f0a000c;
+        public static final int usernameEditText=0x7f0a0005;
+        public static final int websiteNameEditText=0x7f0a0009;
     }
     public static final class layout {
         public static final int activity_clear_clipboard=0x7f030000;
@@ -87,10 +88,11 @@ public final class R {
         public static final int activity_new_account=0x7f030005;
         public static final int activity_new_folder=0x7f030006;
         public static final int activity_new_login=0x7f030007;
-        public static final int activity_password_list=0x7f030008;
-        public static final int expandlist_child_item=0x7f030009;
-        public static final int expandlist_group_item=0x7f03000a;
-        public static final int offblack_spinner=0x7f03000b;
+        public static final int activity_new_smart_file_account=0x7f030008;
+        public static final int activity_password_list=0x7f030009;
+        public static final int expandlist_child_item=0x7f03000a;
+        public static final int expandlist_group_item=0x7f03000b;
+        public static final int offblack_spinner=0x7f03000c;
     }
     public static final class menu {
         public static final int clear_clipboard=0x7f090000;
@@ -101,18 +103,22 @@ public final class R {
         public static final int new_account=0x7f090005;
         public static final int new_folder=0x7f090006;
         public static final int new_login=0x7f090007;
-        public static final int password_list=0x7f090008;
+        public static final int new_smart_file_account=0x7f090008;
+        public static final int password_list=0x7f090009;
     }
     public static final class string {
         public static final int NewLoginText=0x7f05001a;
+        public static final int PleaseConfigureText=0x7f050028;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int cancel=0x7f050018;
         public static final int create=0x7f050017;
         public static final int deleteText=0x7f05001e;
+        public static final int emailText=0x7f050026;
         public static final int enterFTPinformation=0x7f050025;
         public static final int folderName=0x7f050019;
         public static final int folder_prompt=0x7f050015;
+        public static final int fullName=0x7f050027;
         public static final int generate=0x7f050014;
         public static final int hello_world=0x7f050002;
         public static final int login=0x7f050004;
@@ -125,6 +131,7 @@ public final class R {
         public static final int numbers=0x7f050011;
         public static final int password=0x7f050006;
         public static final int passwordlength=0x7f05000e;
+        public static final int pleaseEnterLoginDetailsText=0x7f05002a;
         public static final int remember_me=0x7f050007;
         public static final int search=0x7f05000b;
         public static final int selectapassword=0x7f050020;
@@ -137,6 +144,7 @@ public final class R {
         public static final int title_activity_new_account=0x7f05000c;
         public static final int title_activity_new_folder=0x7f050016;
         public static final int title_activity_new_login=0x7f05001b;
+        public static final int title_activity_new_smart_file_account=0x7f050029;
         public static final int title_activity_password_list=0x7f050008;
         public static final int twentyfour=0x7f05000f;
         public static final int uppercase=0x7f050013;

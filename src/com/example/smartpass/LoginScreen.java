@@ -34,12 +34,10 @@ public class LoginScreen extends Activity {
 		setContentView(R.layout.activity_login_screen);
 
 		final Button loginButton = (Button) findViewById(R.id.loginButton);
-		final Button newLoginButton = (Button) findViewById(R.id.newLoginButton);
 		final EditText usernameEditText = (EditText) findViewById(R.id.usernameEditText);
 		final EditText passwordEditText = (EditText) findViewById(R.id.passwordEditText);
 
 		loginButton.setTypeface(sintRegFont);
-		newLoginButton.setTypeface(sintRegFont);
 		usernameEditText.setTypeface(sintRegFont);
 		passwordEditText.setTypeface(sintRegFont);
 		
@@ -62,13 +60,6 @@ public class LoginScreen extends Activity {
 				args[2] = (password);
 				PasswordFile.initPasswordFile(username, password, context);
 				new RetrivePasswordTask().execute(args);
-			}
-		});
-
-		newLoginButton.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				Intent intent = new Intent(context, NewLogin.class);
-				context.startActivity(intent);
 			}
 		});
 	}

@@ -23,41 +23,6 @@
         android:background="@drawable/solidrect"
         android:minWidth="159dip" />
 
-    <EditText
-        android:id="@+id/newLoginUsernameEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="5dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="136dp"
-        android:background="@drawable/outlinerect"
-        android:ems="10"
-        android:inputType="textNoSuggestions"
-        android:maxWidth="200dp"
-        android:text="@string/username"
-        android:textColor="@color/OffBlack"
-        android:width="200dp" >
-
-        <requestFocus />
-    </EditText>
-
-    <EditText
-        android:id="@+id/newLoginPasswordEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/newLoginUsernameEditText"
-        android:layout_below="@+id/newLoginUsernameEditText"
-        android:layout_marginTop="27dp"
-        android:background="@drawable/outlinerect"
-        android:paddingLeft="5dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:maxWidth="200dp"
-        android:text="@string/password"
-        android:textColor="@color/OffBlack"
-        android:width="200dp" />
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
@@ -78,12 +43,81 @@
 
     <TextView
         android:id="@+id/textView1"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/newLoginUsernameEditText"
-        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_marginTop="62dp"
+        android:text="@string/PleaseConfigureText"
+        android:textColor="@color/OffBlack" />
+
+    <EditText
+        android:id="@+id/newLoginFullNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newLoginUsernameEditText"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/outlinerect"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxWidth="200dp"
+        android:paddingLeft="5dp"
+        android:text="@string/fullName"
         android:textColor="@color/OffBlack"
-        android:layout_marginBottom="34dp"
-        android:text="@string/enterFTPinformation" />
+        android:width="200dp" />
+
+    <EditText
+        android:id="@+id/newLoginEmailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newLoginUsernameEditText"
+        android:layout_below="@+id/newLoginUsernameEditText"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/outlinerect"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:maxWidth="200dp"
+        android:paddingLeft="5dp"
+        android:text="@string/emailText"
+        android:textColor="@color/OffBlack"
+        android:width="200dp" />
+
+    <EditText
+        android:id="@+id/newLoginUsernameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newLoginFullNameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/outlinerect"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:maxWidth="200dp"
+        android:paddingLeft="5dp"
+        android:text="@string/username"
+        android:textColor="@color/OffBlack"
+        android:width="200dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/newLoginPasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newLoginEmailEditText"
+        android:layout_below="@+id/newLoginEmailEditText"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/outlinerect"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:maxWidth="200dp"
+        android:paddingLeft="5dp"
+        android:text="@string/password"
+        android:textColor="@color/OffBlack"
+        android:width="200dp" />
 
 </RelativeLayout>

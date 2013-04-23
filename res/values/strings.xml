@@ -53,5 +53,10 @@
     <string name="noaccountyet">No account yet?</string>
     <string name="title_activity_clear_clipboard">ClearClipboard</string>
     <string name="enterFTPinformation">Enter SmartPass ftp username and password</string>
+    <string name="emailText">email@website.com</string>
+    <string name="fullName">Full Name</string>
+    <string name="PleaseConfigureText">Please enter desired Name, Username, Email, and password</string>
+    <string name="title_activity_new_smart_file_account">NewSmartFileAccount</string>
+    <string name="pleaseEnterLoginDetailsText">Please enter your SmartFile FTP username and password</string>
 
 </resources>

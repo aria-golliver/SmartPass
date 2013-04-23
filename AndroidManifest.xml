@@ -76,6 +76,10 @@
             android:name="com.example.smartpass.ClearClipboard"
             android:label="@string/title_activity_clear_clipboard" >
         </activity>
+        <activity
+            android:name="com.example.smartpass.NewSmartFileAccount"
+            android:label="@string/title_activity_new_smart_file_account" >
+        </activity>
     </application>
 
 </manifest>
