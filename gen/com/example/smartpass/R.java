@@ -36,12 +36,13 @@ public final class R {
         public static final int check_icon2=0x7f020002;
         public static final int deleteaccount_n=0x7f020003;
         public static final int hope=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
-        public static final int ic_launcher1=0x7f020006;
-        public static final int outlinerect=0x7f020007;
-        public static final int removeaccount_icon=0x7f020008;
-        public static final int solidrect=0x7f020009;
-        public static final int x_icon2=0x7f02000a;
+        public static final int hope2=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int ic_launcher1=0x7f020007;
+        public static final int outlinerect=0x7f020008;
+        public static final int removeaccount_icon=0x7f020009;
+        public static final int solidrect=0x7f02000a;
+        public static final int x_icon2=0x7f02000b;
     }
     public static final class id {
         public static final int ExpList=0x7f0a001a;
@@ -54,7 +55,7 @@ public final class R {
         public static final int imageView1=0x7f0a0002;
         public static final int imageView2=0x7f0a0011;
         public static final int imageView3=0x7f0a001e;
-        public static final int loginButton=0x7f0a0003;
+        public static final int loginButton=0x7f0a0004;
         public static final int lowerCheckBox=0x7f0a000b;
         public static final int newAccountButton=0x7f0a001d;
         public static final int newAccountCancelButton=0x7f0a0010;
@@ -70,7 +71,7 @@ public final class R {
         public static final int newLoginPasswordEditText=0x7f0a0019;
         public static final int newLoginUsernameEditText=0x7f0a0017;
         public static final int numberCheckBox=0x7f0a000d;
-        public static final int passwordEditText=0x7f0a0004;
+        public static final int passwordEditText=0x7f0a0003;
         public static final int specialCheckBox=0x7f0a000e;
         public static final int textView1=0x7f0a0006;
         public static final int tvChild=0x7f0a001f;
